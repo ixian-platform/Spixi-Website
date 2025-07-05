@@ -24,11 +24,11 @@ let images = {
 }
 </script>
 <template>
-    <div class="bg-white dark:bg-[#1B232B] p-6 rounded-[40px] w-full flex flex-col justify-between">
+    <div class="bg-white dark:bg-[#090B0D] p-6 rounded-[40px] w-full flex flex-col justify-between">
         <div>
             <h3 class="text-2xl font-lexend font-semibold text-black dark:text-spixi-dark flex flex-col md:flex-row gap-3">
                 {{ title }} 
-                <span v-if="comingSoon" class="text-sm bg-[#6BFCC8] py-1 px-2 font-normal items-center rounded text-spixi">Coming Soon</span>
+                <span v-if="comingSoon" class="text-sm bg-[#6BFCC8] py-1 px-2 font-normal items-center rounded text-spixi">New</span>
             </h3>
             <p class="text-base text-spixi dark:text-spixi-dark my-4">
                 {{ description }}

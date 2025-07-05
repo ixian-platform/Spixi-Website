@@ -14,8 +14,8 @@ useHead({
 
 <template>
     <div>
-        <div class="bg-gradient-to-b from-[#00000000] to-[#1A6FBD59] dark:to-[#3770a659] h-max flex justify-center">
-            <div class="inline-flex flex-col mt-16 gap-16 lg:mx-266px items-center justify-between">
+        <div class="bg-[linear-gradient(0deg,_rgba(240,242,244,0.9),_rgba(240,242,244,0.9)),linear-gradient(180deg,_rgba(20,70,143,0)_47.16%,_rgba(26,111,189,0.35)_100%)] dark:bg-[linear-gradient(0deg,_rgba(38,44,51,0.9),_rgba(38,44,51,0.9)),linear-gradient(180deg,_#1F3341_0%,_#090F14_100%)] bg-blend-overlay h-[calc(100dvh-72px)] flex justify-center">
+            <div class="inline-flex flex-col gap-16 pt-32 pr-4 pl-4 max-sm:pt-16 lg:mx-266px items-center justify-between">
                 <div class="flex flex-col items-center">
                     <h1 class="text-6xl font-medium font-lexend text-black dark:text-spixi-dark text-center tracking-hero">
                         {{ t('pages.home.hero.connectwith') }} <span class="text-[#24BBFF]">{{ t('pages.home.hero.confidence') }}</span>
@@ -24,22 +24,22 @@ useHead({
                         {{ t('pages.home.hero.subtitle') }}
                     </p>
                     <div class="mt-6 flex items-center gap-3 font-medium">
-                        <NuxtLink to="/download" class="bg-[#6BFCC8] hover:bg-[#47D4AA] text-black rounded-lg py-3 px-8">
+                        <NuxtLink to="/download" class="bg-[#0456A9] hover:bg-[#003D79]  text-white rounded-xl py-3 px-8 dark:text-black dark:bg-[#3898FA] dark:hover:bg-[#6AB2FB]">
                             {{ t('pages.misc.tryit') }}
                         </NuxtLink>
-                        <NuxtLink to="/howitworks" class="border border-spixi dark:border-white text-spixi hover:bg-[#1D2329] hover:text-spixi-dark dark:text-spixi-dark dark:hover:bg-spixi-dark dark:hover:text-[#1D2329] rounded-lg py-3 px-8">
+                        <NuxtLink style="outline-style: solid" to="#learn-about" class="outline-2 outline-[#1D2329] dark:outline-white text-[#1D2329] hover:bg-[#1D2329] hover:text-spixi-dark dark:text-spixi-dark dark:hover:bg-spixi-dark dark:hover:text-[#1D2329] rounded-xl py-3 px-8">
                             {{ t('pages.misc.learnmore') }}
                         </NuxtLink>
                     </div>
                 </div>
-                <NuxtImg src="/img/home/HeroLight.png" v-show="$colorMode.value === 'light'" class="content-end w-[714px]" />
-                <NuxtImg src="/img/home/HeroDark.png" v-show="$colorMode.value === 'dark'" class="content-end w-[714px]" />
+                <NuxtImg src="/img/home/HeroLight.png" v-show="$colorMode.value === 'light'" class="content-end h-[400px] max-md:h-[240px] object-cover" />
+                <NuxtImg src="/img/home/HeroDark.png" v-show="$colorMode.value === 'dark'" class="content-end h-[400px] max-md:h-[240px] object-cover" />
             </div>
         </div>
-        <div class="pt-[7.5em] pb-4 px-[2em] max-w-7xl mx-auto">
-            <h1 class="font-lexend text-5xl font-semibold text-black dark:text-spixi-dark leading-normal">
+        <div class="pt-[7.5em] pb-4 px-[2em] max-w-7xl mx-auto" id="learn-about">
+            <h1 class="font-lexend text-5xl font-semibold text-black dark:text-spixi-dark leading-normal text-center">
                 {{ t('pages.home.features.nocompromise') }} <br>
-                <span class="text-[#07C788]">{{ t('pages.home.features.security') }}</span> {{ t('pages.home.features.and') }} <span class="text-[#07C788]">{{ t('pages.home.features.privacy') }}</span>.
+                <span class="text-[#0456A9] dark:text-[#24BBFF]">{{ t('pages.home.features.security') }}</span> {{ t('pages.home.features.and') }} <span class="text-[#0456A9] dark:text-[#24BBFF]">{{ t('pages.home.features.privacy') }}</span>.
             </h1>
             <div class="flex flex-col md:flex-row items-start gap-[40px] w-full justify-between pt-32">
                 <HomeFeatures 
@@ -101,9 +101,7 @@ useHead({
                     </div>
                 </div>
             </div>
-    
             <SpixiSummary />
-            
-        </div>
+                  </div>
     </div>
 </template>
