@@ -23,9 +23,9 @@ const downloads = {
 <template>
     <div class="pt-[4em] pb-4 px-[2em] max-w-7xl mx-auto">
 
-        <div class="bg-white dark:bg-[#1B232B] rounded-2xl">
-            <div class="flex flex-col md:flex-row items-center justify-between py-7 px-10 gap-10">
-                <div class="md:w-1/2 inline-flex flex-col h-52 justify-between item">
+        <div class="bg-white dark:bg-[#090B0D] rounded-2xl">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="md:w-1/2 inline-flex flex-col gap-4 justify-between item p-10">
                     <h2 class="text-5xl font-lexend font-semibold text-black dark:text-spixi-dark pt-4">
                         {{ t('pages.download.title') }}
                     </h2>
@@ -34,9 +34,9 @@ const downloads = {
                         {{ t('pages.download.subtitle2') }}
                     </p>
                 </div>
-                <div class="md:w-1/2 flex justify-center">
-                    <NuxtImg src="/img/DownloadLight.svg" v-show="$colorMode.value === 'light'" class="w-64" />
-                    <NuxtImg src="/img/DownloadDark.svg" v-show="$colorMode.value === 'dark'" class="w-64" />
+                <div class="md:w-1/2 flex justify-center pr-8">
+                    <NuxtImg src="/img/SpixiSummaryLight.png" v-show="$colorMode.value === 'light'" />
+                    <NuxtImg src="/img/SpixiSummaryDark.png" v-show="$colorMode.value === 'dark'" />
                 </div>
             </div>
         </div>

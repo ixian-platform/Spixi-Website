@@ -8,7 +8,7 @@ if (locale.value === 'ru') {
 </script>
 
 <template>
-    <div class="bg-[#F0F2F4] dark:bg-[#262c33]"
+    <div class="bg-[#F0F2F4] dark:bg-[#0D141C]"
         :class="shouldAddWordBreak ? 'break-all' : ''">
         <AppHeader />
         <slot />
