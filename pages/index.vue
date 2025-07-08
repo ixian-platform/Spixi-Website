@@ -15,7 +15,7 @@ useHead({
 <template>
     <div>
         <div class="bg-[linear-gradient(0deg,_rgba(240,242,244,0.9),_rgba(240,242,244,0.9)),linear-gradient(180deg,_rgba(20,70,143,0)_47.16%,_rgba(26,111,189,0.35)_100%)] dark:bg-[linear-gradient(0deg,_rgba(38,44,51,0.9),_rgba(38,44,51,0.9)),linear-gradient(180deg,_#1F3341_0%,_#090F14_100%)] bg-blend-overlay h-[calc(100svh-72px)] flex justify-center">
-            <div class="inline-flex flex-col gap-16 pt-32 pr-4 pl-4 max-sm:pt-16 lg:mx-266px items-center justify-between">
+            <div class="inline-flex flex-col gap-16 pt-24 pr-4 pl-4 max-sm:pt-16 lg:mx-266px items-center justify-between overflow-hidden">
                 <div class="flex flex-col items-center">
                     <h1 class="text-6xl font-medium font-lexend text-black dark:text-spixi-dark text-center tracking-hero">
                         {{ t('pages.home.hero.connectwith') }} <span class="text-[#24BBFF]">{{ t('pages.home.hero.confidence') }}</span>
