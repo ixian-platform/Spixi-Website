@@ -15,8 +15,8 @@ useHead({
 })
 
 const downloads = {
-    'android': 'https://github.com/ixian-platform/Spixi/releases/download/v0.9.7/Spixi-v0.9.7-Android.apk',
-    'windows': 'https://github.com/ixian-platform/Spixi/releases/download/v0.9.7/Spixi-v0.9.7-Win.zip'
+    'android': 'https://github.com/ixian-platform/Spixi/releases/download/v0.9.8/Spixi-v0.9.8-Android.apk',
+    'windows': 'https://github.com/ixian-platform/Spixi/releases/download/v0.9.8/Spixi-v0.9.8-Win.zip'
 }
 </script>
 
