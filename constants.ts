@@ -1,3 +1,3 @@
 
 
-export const spixiVersion = "v0.9.9"
+export const spixiVersion = "v0.9.10"
