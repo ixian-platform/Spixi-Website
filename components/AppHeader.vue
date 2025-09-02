@@ -188,6 +188,13 @@ const toggleDropdownLanguage = () => {
                                 {{ t('menu.home') }}
                             </NuxtLink>
                         </li>
+                      <li class="py-3">
+                        <NuxtLink
+                            to="/spixi-mini-apps"
+                            class="block py-2 px-3 font-lexend text-4xl text-[#1D2329] dark:text-white hover:text-[#24BBFF] dark:hover:text-[#24BBFF]">
+                          {{ t('menu.mini-apps') }}
+                        </NuxtLink>
+                      </li>
                         <li class="py-3">
                             <NuxtLink 
                                 to="/download" 
