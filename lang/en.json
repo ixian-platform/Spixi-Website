@@ -2,6 +2,7 @@
     "menu": {
         "home": "Home",
         "download": "Download",
+        "mini-apps": "Spixi Mini Apps",
         "howitworks": "How it works",
         "privacy": "Privacy Policy",
         "terms": "Terms of Use",
@@ -83,6 +84,33 @@
                 "macos": "{version}"
             }
         },
+      "mini-apps": {
+        "title": "Spixi Mini Apps",
+        "subtitle1": "Lightweight extensions built into Spixi.",
+        "subtitle2": "Try new tools, games, and utilities without leaving your chat.",
+        "try": "Try these sample Mini Apps",
+        "tictac": {
+          "title": "Tic Tac Toe",
+          "desc": "Challenge friends to a quick game and settle debates instantly.",
+          "tag": "Games"
+        },
+        "whiteboard": {
+            "title": "Whiteboard",
+            "desc": "Draw together. Share doodles live with friends.",
+            "tag": "Tools"
+        },
+        "miniAppsTest": {
+            "title": "Mini Apps Test",
+            "desc": "A sample app for exploring and testing the Spixi Mini Apps SDK.",
+            "tag": "Dev"
+        },
+        "tryNow": "Try it now",
+        "close": "Close",
+        "addFromUrl": "Add Mini App from URL:",
+        "scanQr": "Scan QR with Spixi",
+        "modalTitle1": "Open",
+        "modalTitle2": "in Spixi"
+      },
         "howitworks": {
             "title": "How it works",
             "subtitle1": "Spixi is a decentralized chat app with $IXI wallet.",

@@ -28,7 +28,7 @@ let images = {
         <div>
             <h3 class="text-2xl font-lexend font-semibold text-black dark:text-spixi-dark flex flex-col md:flex-row gap-3">
                 {{ title }} 
-                <span v-if="comingSoon" class="text-sm bg-[#6BFCC8] py-1 px-2 font-normal items-center rounded text-spixi">New</span>
+                <NuxtLink to="/spixi-mini-apps" v-if="comingSoon" class="text-sm bg-[#6BFCC8] py-1 px-2 font-normal items-center rounded text-spixi">Try now</NuxtLink>
             </h3>
             <p class="text-base text-spixi dark:text-spixi-dark my-4">
                 {{ description }}
