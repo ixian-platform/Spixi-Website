@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import QrcodeVue from 'qrcode.vue'
 
 const {t} = useI18n()
 
@@ -16,12 +17,10 @@ useHead({
 const dialogRef = ref(null)
 const modalTitle = ref('')
 const modalAppUrl = ref('')
-const modalQrCode = ref('')
 
-function openModal(title, appUrl, qrCode) {
+function openModal(title, appUrl) {
   modalTitle.value = title
   modalAppUrl.value = appUrl
-  modalQrCode.value = qrCode
   dialogRef.value?.showModal()
 }
 
@@ -81,7 +80,7 @@ function handleOutsideClick(e) {
               isMiniApp :miniAppCta="{
               game: 'tic-tac',
               text: t('pages.mini-apps.tryNow'),
-              onclick: () => openModal('TicTacToe', 'https://Resources.ixian.io/tic-tac-toe.spixi', '/img/miniApps/tictac-qr.png')
+              onclick: () => openModal('TicTacToe', 'https://resources.ixian.io/tic-tac-toe.spixi')
               }" miniAppImg="/img/miniApps/tictactoe.png" />
 
           <Download
@@ -91,7 +90,7 @@ function handleOutsideClick(e) {
                isMiniApp :miniAppCta="{
               game: 'whiteboard',
               text: t('pages.mini-apps.tryNow'),
-              onclick: () => openModal('Whiteboard', 'https://resources.ixian.io/whiteboard.spixi', '/img/miniApps/whiteboard-qr.png')
+              onclick: () => openModal('Whiteboard', 'https://resources.ixian.io/whiteboard.spixi')
               }" miniAppImg="/img/miniApps/whiteboard.png" />
 
           <Download
@@ -101,7 +100,7 @@ function handleOutsideClick(e) {
               isMiniApp :miniAppCta="{
               game: 'app-test',
               text: t('pages.mini-apps.tryNow'),
-              onclick: () => openModal('Mini Apps Test', 'Https://Resources.ixian.io/mini-apps-test.spixi', '/img/miniApps/app-test-qr.png')
+              onclick: () => openModal('Mini Apps Test', 'https://resources.ixian.io/mini-apps-test.spixi')
               }" miniAppImg="/img/miniApps/app-test.png" />
         </div>
       </div>
@@ -118,7 +117,7 @@ function handleOutsideClick(e) {
       <h2 class="text-xl font-semibold mb-4">{{t('pages.mini-apps.modalTitle1')}} {{ modalTitle }} {{t('pages.mini-apps.modalTitle2')}}</h2>
       <div class="bg-[#f0f0f0] dark:bg-[#0D141C] p-4 rounded-lg w-full flex flex-col items-center gap-1">
         <h3>{{t('pages.mini-apps.scanQr')}}</h3>
-        <img :src="modalQrCode" alt="QR Code" class="w-48 h-48 mx-auto my-4 rounded-lg" />
+        <QrcodeVue :value="modalAppUrl" :size="192" :margin="2" level="H" class="mx-auto my-4 rounded-lg bg-white p-2"/>
         <p>{{t('pages.mini-apps.addFromUrl')}}</p>
         <p>{{ modalAppUrl }}</p>
       </div>
