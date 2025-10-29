@@ -80,7 +80,7 @@ function handleOutsideClick(e) {
               isMiniApp :miniAppCta="{
               game: 'tic-tac',
               text: t('pages.mini-apps.tryNow'),
-              onclick: () => openModal('TicTacToe', 'https://resources.ixian.io/tic-tac-toe.spixi')
+              onclick: () => openModal('TicTacToe', 'https://apps.spixi.io/apps/tic-tac-toe.spixi')
               }" miniAppImg="/img/miniApps/tictactoe.png" />
 
           <Download
@@ -90,7 +90,7 @@ function handleOutsideClick(e) {
                isMiniApp :miniAppCta="{
               game: 'whiteboard',
               text: t('pages.mini-apps.tryNow'),
-              onclick: () => openModal('Whiteboard', 'https://resources.ixian.io/whiteboard.spixi')
+              onclick: () => openModal('Whiteboard', 'https://apps.spixi.io/apps/whiteboard.spixi')
               }" miniAppImg="/img/miniApps/whiteboard.png" />
 
           <Download
@@ -100,7 +100,7 @@ function handleOutsideClick(e) {
               isMiniApp :miniAppCta="{
               game: 'app-test',
               text: t('pages.mini-apps.tryNow'),
-              onclick: () => openModal('Mini Apps Test', 'https://resources.ixian.io/mini-apps-test.spixi')
+              onclick: () => openModal('Mini Apps Test', 'https://apps.spixi.io/apps/mini-apps-test.spixi')
               }" miniAppImg="/img/miniApps/app-test.png" />
         </div>
       </div>
