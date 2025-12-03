@@ -3,8 +3,14 @@
 export default defineNuxtConfig({
     devtools: {enabled: true},
     nitro: {
+        preset: 'github-pages',
+        prerender: {
+            crawlLinks: true,
+            failOnError: false,
+        },
         routeRules: {
             '/**': {
+                prerender: true,
                 headers: {
                     'X-Frame-Options': 'DENY'
                 }
@@ -74,7 +80,7 @@ export default defineNuxtConfig({
     },
 
     app: {
-        pageTransition: {name: 'page', mode: 'out-in'},
+        pageTransition: false,
         head: {
             title: 'Spixi',
             charset: 'utf-8',
