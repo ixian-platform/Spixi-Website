@@ -1,0 +1,111 @@
+{
+  "apps": [
+    {
+      "id": "ai-assistant",
+      "name": "AI Assistant",
+      "publisher": "Serg",
+      "description": "Local LLM accessed and charged over Spixi and Ixian Platform.",
+      "category": "AI",
+      "featured": true,
+      "icon": "assets/images/ai-assistant.png",
+      "spixiUrl": "spixi://app/ai-assistant",
+      "github": "https://github.com/example/ai-assistant"
+    },
+    {
+      "id": "ixijump",
+      "name": "IXIJump",
+      "publisher": "Spoony",
+      "description": "A fast-paced tapping game built for Spixi. Simple and addictive.",
+      "category": "Games",
+      "featured": true,
+      "icon": "assets/images/ixijump.png",
+      "spixiUrl": "spixi://app/ixijump",
+      "github": "https://github.com/example/ixijump"
+    },
+    {
+      "id": "calculator",
+      "name": "Spixi Calculator",
+      "publisher": "Spoony",
+      "description": "Calculator built into Spixi for everyday math while you chat and work.",
+      "category": "Tools",
+      "featured": false,
+      "icon": "assets/images/calculator.png",
+      "spixiUrl": "spixi://app/calculator",
+      "github": "https://github.com/example/calculator"
+    },
+    {
+      "id": "pong",
+      "name": "IXI Pong",
+      "publisher": "Baracuda",
+      "description": "Classic game of Pong, but this time play it in Spixi.",
+      "category": "Games",
+      "featured": false,
+      "icon": "assets/images/pong.png",
+      "spixiUrl": "spixi://app/pong",
+      "github": "https://github.com/example/pong"
+    },
+    {
+      "id": "contra",
+      "name": "Contra",
+      "publisher": "Baracuda",
+      "description": "Arcade-style tapping game with increasing difficulty. Built for Spixi.",
+      "category": "Games",
+      "featured": false,
+      "icon": "assets/images/contra.png",
+      "spixiUrl": "spixi://app/contra",
+      "github": "https://github.com/example/contra"
+    },
+    {
+      "id": "tictactoe",
+      "name": "Tic Tac Toe",
+      "publisher": "IXI Labs",
+      "description": "Challenge friends to a quick game and settle debates instantly.",
+      "category": "Games",
+      "featured": true,
+      "icon": "assets/images/tictactoe.png",
+      "spixiUrl": "spixi://app/tictactoe",
+      "github": "https://github.com/example/tictactoe"
+    },
+    {
+      "id": "whiteboard",
+      "name": "Whiteboard",
+      "publisher": "IXI Labs",
+      "description": "Draw together in real time. Share doodles and notes with friends.",
+      "category": "Tools",
+      "featured": true,
+      "icon": "assets/images/whiteboard.png",
+      "spixiUrl": "spixi://app/whiteboard",
+      "github": "https://github.com/example/whiteboard"
+    },
+    {
+      "id": "gate-control",
+      "name": "Gate Control",
+      "publisher": "IXI Labs",
+      "description": "Connect your IoT gates to Spixi.",
+      "category": "IoT",
+      "featured": false,
+      "icon": "assets/images/gate-control.png",
+      "spixiUrl": "spixi://app/gate-control",
+      "github": "https://github.com/example/gate-control"
+    },
+    {
+      "id": "miniapps-test",
+      "name": "Mini Apps Test",
+      "publisher": "IXI Labs",
+      "description": "Explore and test the Spixi Mini Apps SDK.",
+      "category": "Dev Tools",
+      "featured": false,
+      "icon": "assets/images/miniapps-test.png",
+      "spixiUrl": "spixi://app/miniapps-test",
+      "github": "https://github.com/example/miniapps-test"
+    }
+  ],
+  "categories": [
+    "All",
+    "AI",
+    "Games",
+    "IoT",
+    "Tools",
+    "Dev Tools"
+  ]
+}

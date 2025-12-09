@@ -1,0 +1,616 @@
+/**
+ * Spixi Design System v2 - CSS Variables
+ * Generated from Figma Design System
+ * 
+ * Uses Dark Mode as default
+ * Light mode available via [data-theme="light"]
+ */
+
+:root {
+  /* ========================================
+     COLOR TOKENS - DARK MODE (DEFAULT)
+     ======================================== */
+  
+  /* Text Colors */
+  --color-text-01: #f9fafb;
+  --color-text-02: #d4d4d8;
+  --color-text-disabled: #3f3f46;
+  --color-text-on-action: #f9fafb;
+  --color-text-on-disabled: #d4d4d8;
+  --color-text-inverse-01: #04070b;
+  --color-text-inverse-02: #172330;
+  --color-text-accent: #c987d9;
+  
+  /* Text Action States */
+  --color-text-action-default: #51a3f6;
+  --color-text-action-hover: #0b70d5;
+  --color-text-action-pressed: #0456a9;
+  --color-text-action-disabled: #71717a;
+  
+  /* Text Semantic */
+  --color-text-info: #60a5fa;
+  --color-text-info-inverse: #1e40af;
+  --color-text-success: #34d399;
+  --color-text-success-inverse: #065f46;
+  --color-text-warning: #fbbf24;
+  --color-text-warning-inverse: #92400e;
+  --color-text-error: #f87171;
+  --color-text-error-inverse: #991b1b;
+  
+  /* Surface Colors */
+  --color-surface-01: #04070b;
+  --color-surface-02: #081016;
+  --color-surface-03: #0e1820;
+  --color-surface-04: #172330;
+  --color-surface-disabled: #3f3f46;
+  --color-surface-inverse-01: #f3f4f6;
+  --color-surface-inverse-02: #e5e7eb;
+  --color-surface-accent: #c987d9;
+  
+  /* Surface Action States */
+  --color-surface-action-default: #0b70d5;
+  --color-surface-action-hover: #0456a9;
+  --color-surface-action-pressed: #003d7a;
+  --color-surface-action-disabled: #71717a;
+  
+  /* Surface Semantic */
+  --color-surface-info: #60a5fa;
+  --color-surface-info-inverse: #1e40af;
+  --color-surface-success: #34d399;
+  --color-surface-success-inverse: #065f46;
+  --color-surface-warning: #fbbf24;
+  --color-surface-warning-inverse: #92400e;
+  --color-surface-error: #f87171;
+  --color-surface-error-inverse: #991b1b;
+  
+  /* Icon Colors */
+  --color-icon-01: #f9fafb;
+  --color-icon-02: #d4d4d8;
+  --color-icon-on-action: #f9fafb;
+  --color-icon-on-disabled: #d4d4d8;
+  --color-icon-inverse-01: #04070b;
+  --color-icon-inverse-02: #172330;
+  --color-icon-accent: #c987d9;
+  
+  /* Icon Action States */
+  --color-icon-action-default: #0b70d5;
+  --color-icon-action-hover: #0456a9;
+  --color-icon-action-pressed: #003d7a;
+  --color-icon-action-disabled: #71717a;
+  
+  /* Icon Semantic */
+  --color-icon-info: #93c5fd;
+  --color-icon-info-inverse: #1e40af;
+  --color-icon-success: #34d399;
+  --color-icon-success-inverse: #065f46;
+  --color-icon-warning: #fbbf24;
+  --color-icon-warning-inverse: #92400e;
+  --color-icon-error: #f87171;
+  --color-icon-error-inverse: #991b1b;
+
+  /* Icon sizes */
+  --icon-size-xs: 16px;
+  --icon-size-sm: 22px;
+  --icon-size-md: 24px;
+  --icon-size-lg: 32px;
+  /* Button sizes */
+  --button-height-lg: 64px;
+  /* Icon container sizes */
+  --icon-container-lg: 56px;
+  --card-md-image-size: 72px;
+  /* Store badge defaults */
+  --store-badge-height: 48px;
+  /* Modal app image sizes */
+  --modal-app-image-size-lg: 96px;
+  --modal-app-image-size-sm: 48px;
+  /* Toggle sizes */
+  --toggle-width: 48px;
+  --toggle-height: 28px;
+  /* Module widths */
+  --list-item-max-width: 468px;
+  --card-md-max-width: 395px;
+  
+  /* Outline Colors */
+  --color-outline-01: #0e1820;
+  --color-outline-02: #172330;
+  --color-outline-03: #3f3f46;
+  --color-outline-disabled: #52525b;
+  --color-outline-inverse: #f9fafb;
+  --color-outline-inverse-2: #e5e7eb;
+  --color-outline-accent: #c987d9;
+  
+  /* Outline Action Primary States */
+  --color-outline-action-primary-default: #0b70d5;
+  --color-outline-action-primary-hover: #0456a9;
+  --color-outline-action-primary-pressed: #003d7a;
+  --color-outline-action-primary-disabled: #71717a;
+  
+  /* Outline Action Secondary States */
+  --color-outline-action-secondary-default: #f9fafb;
+  --color-outline-action-secondary-hover: #e5e7eb;
+  --color-outline-action-secondary-pressed: #a1a1aa;
+  --color-outline-action-secondary-disabled: #71717a;
+  
+  /* Outline Semantic */
+  --color-outline-success: #34d399;
+  --color-outline-success-inverse: #065f46;
+  --color-outline-warning: #fbbf24;
+  --color-outline-warning-inverse: #92400e;
+  --color-outline-error: #f87171;
+  --color-outline-error-inverse: #991b1b;
+  
+  /* ========================================
+     SPACING TOKENS
+     ======================================== */
+  
+  --spacing-none: 0px;
+  --spacing-3xs: 2px;
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 32px;
+  --spacing-3xl: 40px;
+  --spacing-super: 64px;
+  --spacing-super-lg: 80px;
+  --spacing-super-xl: 100px;
+  --spacing-super-xxl: 120px;
+  /* Additional hero & CTA tokens (site-specific overrides) */
+  --hero-min-height-lg: 581px;
+  --hero-min-height-md: 400px;
+  --hero-gap-lg: 86px;
+  --cta-image-width: 640px;
+  --cta-image-height: 680px;
+  --button-height-md: 66px;
+  --spacing-sm-plus: 10px;
+  --hero-content-max-width-lg: 640px;
+  --hero-content-max-width-md: 628px;
+  /* Help center hero image tokens */
+  --help-hero-image-height-mobile: 300px;
+  --help-hero-img-width: 140px;
+  /* Responsive typography tokens */
+  --display-md-font-size-mobile: 36px;
+  --display-md-line-height-mobile: 44px;
+  --display-md-letter-spacing-mobile: -1.5px;
+  
+  /* Negative Spacing */
+  --spacing-negative-3xl: -40px;
+  --spacing-negative-super: -64px;
+  --spacing-negative-super-lg: -80px;
+  --spacing-negative-super-xl: -100px;
+  --spacing-negative-super-xxl: -120px;
+  
+  /* ========================================
+     CORNER RADIUS TOKENS
+     ======================================== */
+  
+  --corner-radius-none: 0px;
+  --corner-radius-xxs: 2px;
+  --corner-radius-xs: 4px;
+  --corner-radius-sm: 8px;
+  --corner-radius-md: 12px;
+  --corner-radius-lg: 16px;
+  --corner-radius-lg-plus: 20px;
+  --corner-radius-xl: 24px;
+  --corner-radius-xxl: 32px;
+  --corner-radius-3xl: 40px;
+  --corner-radius-full: 800px;
+  
+  /* ========================================
+     OUTLINE WIDTH TOKENS
+     ======================================== */
+  
+  --outline-width-sm: 1px;
+  --outline-width-md: 2px;
+  --outline-width-lg: 4px;
+  
+  /* ========================================
+     TYPOGRAPHY - DISPLAY (Desktop)
+     ======================================== */
+  
+  /* Display Large */
+  --display-lg-font-family: 'Sora', sans-serif;
+  --display-lg-font-size: 56px;
+  --display-lg-font-weight: 600;
+  --display-lg-line-height: 64px;
+  --display-lg-letter-spacing: -2px;
+  
+  /* Display Medium */
+  --display-md-font-family: 'Sora', sans-serif;
+  --display-md-font-size: 44px;
+  --display-md-font-weight: 600;
+  --display-md-line-height: 52px;
+  --display-md-letter-spacing: -2px;
+  
+  /* ========================================
+     TYPOGRAPHY - HEADING (Desktop)
+     ======================================== */
+  
+  /* Heading Large */
+  --heading-lg-font-family: 'Sora', sans-serif;
+  --heading-lg-font-size: 32px;
+  --heading-lg-font-weight: 600;
+  --heading-lg-line-height: 44px;
+  --heading-lg-letter-spacing: -1px;
+  
+  /* Heading Medium */
+  --heading-md-font-family: 'Inter', sans-serif;
+  --heading-md-font-size: 24px;
+  --heading-md-font-weight: 600;
+  --heading-md-line-height: 36px;
+  --heading-md-letter-spacing: -1px;
+  
+  /* Heading Small */
+  --heading-sm-font-family: 'Inter', sans-serif;
+  --heading-sm-font-size: 20px;
+  --heading-sm-font-weight: 600;
+  --heading-sm-line-height: 28px;
+  --heading-sm-letter-spacing: -0.5px;
+  
+  /* Heading XSmall */
+  --heading-xs-font-family: 'Inter', sans-serif;
+  --heading-xs-font-size: 20px;
+  --heading-xs-font-weight: 600;
+  --heading-xs-line-height: 28px;
+  --heading-xs-letter-spacing: -0.5px;
+  
+  /* ========================================
+     TYPOGRAPHY - LABEL (Desktop)
+     ======================================== */
+  
+  /* Label Large */
+  --label-lg-font-family: 'Inter', sans-serif;
+  --label-lg-font-size: 18px;
+  --label-lg-font-weight: 600;
+  --label-lg-line-height: 28px;
+  --body-md-letter-spacing: 0px; /* Global label tracking token (for compact text like labels and UI elements) */
+  --tracking-global-label: -0.5px;
+  
+  /* Label Medium */
+  --label-md-font-family: 'Inter', sans-serif;
+  --label-md-font-size: 16px;
+  --label-md-font-weight: 600;
+  --label-md-line-height: 24px;
+  --label-md-letter-spacing: -0.5px;
+  
+  /* Label Small */
+  --label-sm-font-family: 'Inter', sans-serif;
+  --label-sm-font-size: 14px;
+  --label-sm-font-weight: 600;
+  --label-sm-line-height: 20px;
+  --label-sm-letter-spacing: -0.5px;
+  
+  /* Label XSmall */
+  --label-xs-font-family: 'Inter', sans-serif;
+  --label-xs-font-size: 12px;
+  --label-xs-font-weight: 600;
+  --label-xs-line-height: 16px;
+  --label-xs-letter-spacing: -0.5px;
+  
+  /* ========================================
+     TYPOGRAPHY - BODY (Desktop)
+     ======================================== */
+  
+  /* Body Large */
+  --body-lg-font-family: 'Inter', sans-serif;
+  --body-lg-font-size: 18px;
+  --body-lg-font-weight: 400;
+  --body-lg-line-height: 28px;
+  --body-lg-letter-spacing: -0.25px;
+  
+  /* Body Medium */
+  --body-md-font-family: 'Inter', sans-serif;
+  --body-md-font-size: 16px;
+  --body-md-font-weight: 400;
+  --body-md-line-height: 24px;
+  --body-md-letter-spacing: 0px;
+  
+  /* Body Small */
+  --body-sm-font-family: 'Inter', sans-serif;
+  --body-sm-font-size: 14px;
+  --body-sm-font-weight: 400;
+  --body-sm-line-height: 20px;
+  --body-sm-letter-spacing: 0px;
+  
+  /* Body XSmall */
+  --body-xs-font-family: 'Inter', sans-serif;
+  --body-xs-font-size: 12px;
+  --body-xs-font-weight: 400;
+  --body-xs-line-height: 16px;
+  --body-xs-letter-spacing: 0px;
+  
+  /* ========================================
+     ADDITIONAL TOKENS
+     ======================================== */
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  
+  /* Glow Shadows */
+  --shadow-glow-accent: 0 0 20px rgba(201, 135, 217, 0.3);
+  --shadow-glow-action: 0 0 20px rgba(11, 112, 213, 0.3);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+  
+  /* Z-Index */
+  --z-index-base: 1;
+  --z-index-dropdown: 100;
+  --z-index-sticky: 200;
+  --z-index-fixed: 300;
+  --z-index-modal: 500;
+  --z-index-tooltip: 700;
+  --z-index-nav: 1000;
+  --z-index-mobile-menu: 2000;
+  
+  /* Opacity */
+  --opacity-disabled: 0.4;
+  --opacity-hover: 0.8;
+  --opacity-light: 0.6;
+  /* Background & Gradient Tokens */
+  --band-gr-dark: linear-gradient(113deg, rgba(140, 65, 206, 0.25) 2.08%, rgba(16, 90, 173, 0.25) 53.02%, rgba(6, 59, 158, 0.25) 97.54%);
+}
+
+/* ========================================
+   LIGHT MODE
+   ======================================== */
+
+[data-theme="light"] {
+  /* Text Colors */
+  --color-text-01: #04070b;
+  --color-text-02: #172330;
+  --color-text-disabled: #a1a1aa;
+  --color-text-on-action: #f9fafb;
+  --color-text-on-disabled: #3f3f46;
+  --color-text-inverse-01: #f9fafb;
+  --color-text-inverse-02: #e5e7eb;
+  --color-text-accent: #ad4fc4;
+  
+  /* Text Action States */
+  --color-text-action-default: #003d7a;
+  --color-text-action-hover: #002e5c;
+  --color-text-action-pressed: #052442;
+  --color-text-action-disabled: #52525b;
+  
+  /* Text Semantic */
+  --color-text-info: #2563eb;
+  --color-text-info-inverse: #93c5fd;
+  --color-text-success: #059669;
+  --color-text-success-inverse: #6ee7b7;
+  --color-text-warning: #d97706;
+  --color-text-warning-inverse: #fcd34d;
+  --color-text-error: #dc2626;
+  --color-text-error-inverse: #fca5a5;
+  
+  /* Surface Colors */
+  --color-surface-01: #f9fafb;
+  --color-surface-02: #f3f4f6;
+  --color-surface-03: #e5e7eb;
+  --color-surface-04: #d4d4d8;
+  --color-surface-disabled: #a1a1aa;
+  --color-surface-inverse-01: #081016;
+  --color-surface-inverse-02: #0e1820;
+  --color-surface-accent: #ad4fc4;
+  
+  /* Surface Action States */
+  --color-surface-action-default: #0456a9;
+  --color-surface-action-hover: #003d7a;
+  --color-surface-action-pressed: #002e5c;
+  --color-surface-action-disabled: #a1a1aa;
+  
+  /* Surface Semantic */
+  --color-surface-info: #2563eb;
+  --color-surface-info-inverse: #93c5fd;
+  --color-surface-success: #059669;
+  --color-surface-success-inverse: #6ee7b7;
+  --color-surface-warning: #d97706;
+  --color-surface-warning-inverse: #fcd34d;
+  --color-surface-error: #dc2626;
+  --color-surface-error-inverse: #fca5a5;
+  
+  /* Icon Colors */
+  --color-icon-01: #04070b;
+  --color-icon-02: #172330;
+  --color-icon-on-action: #f9fafb;
+  --color-icon-on-disabled: #3f3f46;
+  --color-icon-inverse-01: #f9fafb;
+  --color-icon-inverse-02: #e5e7eb;
+  --color-icon-accent: #ad4fc4;
+  
+  /* Icon Action States */
+  --color-icon-action-default: #003d7a;
+  --color-icon-action-hover: #002e5c;
+  --color-icon-action-pressed: #052442;
+  --color-icon-action-disabled: #a1a1aa;
+  
+  /* Icon Semantic */
+  --color-icon-info: #1d4ed8;
+  --color-icon-info-inverse: #93c5fd;
+  --color-icon-success: #059669;
+  --color-icon-success-inverse: #6ee7b7;
+  --color-icon-warning: #d97706;
+  --color-icon-warning-inverse: #fcd34d;
+  --color-icon-error: #dc2626;
+  --color-icon-error-inverse: #fca5a5;
+  
+  /* Outline Colors */
+  --color-outline-01: #d4d4d8;
+  --color-outline-02: #a1a1aa;
+  --color-outline-03: #71717a;
+  --color-outline-disabled: #a1a1aa;
+  --color-outline-inverse: #081016;
+  --color-outline-inverse-2: #172330;
+  --color-outline-accent: #ad4fc4;
+  
+  /* Outline Action Primary States */
+  --color-outline-action-primary-default: #003d7a;
+  --color-outline-action-primary-hover: #002e5c;
+  --color-outline-action-primary-pressed: #052442;
+  --color-outline-action-primary-disabled: #b6d9fb;
+  
+  /* Outline Action Secondary States */
+  --color-outline-action-secondary-default: #003d7a;
+  --color-outline-action-secondary-hover: #002e5c;
+  --color-outline-action-secondary-pressed: #052442;
+  --color-outline-action-secondary-disabled: #b6d9fb;
+  
+  /* Outline Semantic */
+  --color-outline-success: #059669;
+  --color-outline-success-inverse: #6ee7b7;
+  --color-outline-warning: #d97706;
+  --color-outline-warning-inverse: #fcd34d;
+  --color-outline-error: #dc2626;
+  --color-outline-error-inverse: #fca5a5;
+}
+
+/* ========================================
+   RESPONSIVE TYPOGRAPHY - MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+  :root {
+    /* Display Typography - Mobile */
+    --display-lg-font-size: 36px;
+    --display-lg-line-height: 44px;
+    --display-lg-letter-spacing: -1.5px;
+    
+    --display-md-font-size: 28px;
+    --display-md-line-height: 36px;
+    --display-md-letter-spacing: -1.5px;
+    
+    /* Heading Typography - Mobile */
+    --heading-lg-font-size: 26px;
+    --heading-lg-line-height: 32px;
+    --heading-lg-letter-spacing: -1px;
+    
+    --heading-md-font-size: 22px;
+    --heading-md-line-height: 28px;
+    --heading-md-letter-spacing: -1px;
+    
+    --heading-sm-font-size: 18px;
+    --heading-sm-line-height: 24px;
+    
+    --heading-xs-font-size: 18px;
+    --heading-xs-line-height: 24px;
+  }
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Display Typography */
+.text-display-lg {
+  font-family: var(--display-lg-font-family);
+  font-size: var(--display-lg-font-size);
+  font-weight: var(--display-lg-font-weight);
+  line-height: var(--display-lg-line-height);
+  letter-spacing: var(--display-lg-letter-spacing);
+}
+
+.text-display-md {
+  font-family: var(--display-md-font-family);
+  font-size: var(--display-md-font-size);
+  font-weight: var(--display-md-font-weight);
+  line-height: var(--display-md-line-height);
+  letter-spacing: var(--display-md-letter-spacing);
+}
+
+/* Heading Typography */
+.text-heading-lg {
+  font-family: var(--heading-lg-font-family);
+  font-size: var(--heading-lg-font-size);
+  font-weight: var(--heading-lg-font-weight);
+  line-height: var(--heading-lg-line-height);
+  letter-spacing: var(--heading-lg-letter-spacing);
+}
+
+.text-heading-md {
+  font-family: var(--heading-md-font-family);
+  font-size: var(--heading-md-font-size);
+  font-weight: var(--heading-md-font-weight);
+  line-height: var(--heading-md-line-height);
+  letter-spacing: var(--heading-md-letter-spacing);
+}
+
+.text-heading-sm {
+  font-family: var(--heading-sm-font-family);
+  font-size: var(--heading-sm-font-size);
+  font-weight: var(--heading-sm-font-weight);
+  line-height: var(--heading-sm-line-height);
+  letter-spacing: var(--heading-sm-letter-spacing);
+}
+
+/* Label Typography */
+.text-label-lg {
+  font-family: var(--label-lg-font-family);
+  font-size: var(--label-lg-font-size);
+  font-weight: var(--label-lg-font-weight);
+  line-height: var(--label-lg-line-height);
+  letter-spacing: var(--label-lg-letter-spacing);
+}
+
+.text-label-md {
+  font-family: var(--label-md-font-family);
+  font-size: var(--label-md-font-size);
+  font-weight: var(--label-md-font-weight);
+  line-height: var(--label-md-line-height);
+  letter-spacing: var(--label-md-letter-spacing);
+}
+
+.text-label-sm {
+  font-family: var(--label-sm-font-family);
+  font-size: var(--label-sm-font-size);
+  font-weight: var(--label-sm-font-weight);
+  line-height: var(--label-sm-line-height);
+  letter-spacing: var(--label-sm-letter-spacing);
+}
+
+.text-label-xs {
+  font-family: var(--label-xs-font-family);
+  font-size: var(--label-xs-font-size);
+  font-weight: var(--label-xs-font-weight);
+  line-height: var(--label-xs-line-height);
+  letter-spacing: var(--label-xs-letter-spacing);
+}
+
+/* Body Typography */
+.text-body-lg {
+  font-family: var(--body-lg-font-family);
+  font-size: var(--body-lg-font-size);
+  font-weight: var(--body-lg-font-weight);
+  line-height: var(--body-lg-line-height);
+  letter-spacing: var(--body-lg-letter-spacing);
+}
+
+.text-body-md {
+  font-family: var(--body-md-font-family);
+  font-size: var(--body-md-font-size);
+  font-weight: var(--body-md-font-weight);
+  line-height: var(--body-md-line-height);
+  letter-spacing: var(--body-md-letter-spacing);
+}
+
+.text-body-sm {
+  font-family: var(--body-sm-font-family);
+  font-size: var(--body-sm-font-size);
+  font-weight: var(--body-sm-font-weight);
+  line-height: var(--body-sm-line-height);
+  letter-spacing: var(--body-sm-letter-spacing);
+}
+
+.text-body-xs {
+  font-family: var(--body-xs-font-family);
+  font-size: var(--body-xs-font-size);
+  font-weight: var(--body-xs-font-weight);
+  line-height: var(--body-xs-line-height);
+  letter-spacing: var(--body-xs-letter-spacing);
+}
