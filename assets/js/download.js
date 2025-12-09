@@ -61,33 +61,29 @@ class DownloadPage {
   updatePrimaryButton() {
     const button = document.getElementById('primary-download-btn');
     const buttonText = document.getElementById('primary-btn-text');
-    const buttonIcon = document.getElementById('primary-btn-icon');
     const versionInfo = document.getElementById('version-info');
 
-    if (!button || !buttonText || !buttonIcon) return;
+    if (!button) return;
 
     const config = this.getButtonConfig();
-    
-    // Update button text
-    buttonText.textContent = config.text;
     
     // Update button link
     button.href = config.url;
     
-    // Update icon
-    buttonIcon.innerHTML = config.icon;
-    
-    // Show/hide version info (hide for store links)
-    if (config.hideVersion && versionInfo) {
-      versionInfo.classList.add('hidden');
-    } else if (versionInfo) {
-      versionInfo.classList.remove('hidden');
-    }
-
     // Add target="_blank" for store links
     if (config.isStoreLink) {
       button.setAttribute('target', '_blank');
       button.setAttribute('rel', 'noopener noreferrer');
+    } else {
+      button.removeAttribute('target');
+      button.removeAttribute('rel');
+    }
+    
+    // Show/hide version info (hide for store links)
+    if (config.hideVersion && versionInfo) {
+      versionInfo.style.display = 'none';
+    } else if (versionInfo) {
+      versionInfo.style.display = '';
     }
 
     // Adjust button styling for store badges
@@ -96,6 +92,15 @@ class DownloadPage {
       button.classList.add('btn-store');
       // Replace button content with store badge image (css controls height)
       button.innerHTML = `<img src="${config.badgeImage}" alt="${config.text}">`;
+    } else {
+      // Keep standard button style for Windows/Linux
+      button.classList.remove('btn-store');
+      button.classList.add('btn-primary');
+      
+      // Update button text only
+      if (buttonText) {
+        buttonText.textContent = config.text;
+      }
     }
   }
 
