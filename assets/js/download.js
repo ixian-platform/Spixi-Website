@@ -107,7 +107,7 @@ class DownloadPage {
     const configs = {
       windows: {
         text: 'Download for Windows',
-        url: 'https://github.com/ixian-platform/Spixi/releases/latest/download/spixi-windows.exe',
+        url: 'https://github.com/ixian-platform/Spixi/releases/download/v0.9.14/Spixi-v0.9.14-Win.zip',
         icon: this.getDownloadIcon(),
         hideVersion: false,
         isStoreLink: false,
@@ -115,7 +115,7 @@ class DownloadPage {
       },
       macos: {
         text: 'Download on App Store',
-        url: 'https://apps.apple.com/app/spixi/id123456789',
+        url: 'https://apps.apple.com/us/app/spixi-private-chat-wallet/id6667121792',
         icon: '',
         hideVersion: true,
         isStoreLink: true,
@@ -132,7 +132,7 @@ class DownloadPage {
       },
       ios: {
         text: 'Download on App Store',
-        url: 'https://apps.apple.com/app/spixi/id123456789',
+        url: 'https://apps.apple.com/us/app/spixi-private-chat-wallet/id6667121792',
         icon: '',
         hideVersion: true,
         isStoreLink: true,
@@ -141,7 +141,7 @@ class DownloadPage {
       },
       android: {
         text: 'Get it on Google Play',
-        url: 'https://play.google.com/store/apps/details?id=com.spixi',
+        url: 'https://play.google.com/store/apps/details?id=com.ixilabs.spixi',
         icon: '',
         hideVersion: true,
         isStoreLink: true,
