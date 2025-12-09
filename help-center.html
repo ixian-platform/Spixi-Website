@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Center - Spixi</title>
+  <meta name="description" content="Learn how Spixi works, FAQ, and support resources">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sora:wght@400;600;700&family=Lexend:wght@400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <link rel="canonical" href="https://spixi.io/help-center.html" />
+  <meta name="description" content="Get Spixi guides, FAQs, and troubleshooting for installation, Mini Apps, wallet setup, and privacy." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#081016" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Spixi" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Help Center — Spixi Documentation & FAQs" />
+  <meta property="og:description" content="Get Spixi guides, FAQs, and troubleshooting for installation, Mini Apps, wallet setup, and privacy." />
+  <meta property="og:url" content="https://spixi.io/help-center.html" />
+  <meta property="og:image" content="https://spixi.io/assets/images/og/spixi-og.png" />
+  <meta property="og:image:alt" content="Help center search and article icons" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@spixiim" />
+  <meta name="twitter:title" content="Help Center — Spixi Documentation & FAQs" />
+  <meta name="twitter:description" content="Get Spixi guides, FAQs, and troubleshooting for installation, Mini Apps, wallet setup, and privacy." />
+  <meta name="twitter:image" content="https://spixi.io/assets/images/og/spixi-og.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Spixi",
+    "url": "https://spixi.io",
+    "logo": "https://spixi.io/assets/icons/spixi-logo.svg",
+      "sameAs": [
+      "https://x.com/spixiim",
+      "https://github.com/ixian-platform/Spixi"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__container">
+      <!-- Logo -->
+      <a href="/" class="navbar__logo">
+        <img src="assets/icons/spixi-logo.svg" alt="Spixi" class="navbar__logo-icon">
+        <span class="navbar__logo-text">Spixi</span>
+      </a>
+
+      <!-- Navigation Links (Desktop) -->
+      <div class="navbar__nav">
+        <a href="/index.html#features" class="navbar__link">Features</a>
+        <a href="/help-center.html" class="navbar__link navbar__link--active">Help Center</a>
+        <a href="/mini-apps.html" class="navbar__link">Mini Apps</a>
+      </div>
+
+      <!-- CTA Button (Desktop) -->
+      <div class="navbar__actions">
+        <a href="/download.html" class="btn btn-md btn-outlined">
+          <span class="btn__label">Download Spixi</span>
+        </a>
+      </div>
+
+      <!-- Mobile CTA & Hamburger -->
+      <div class="navbar__mobile">
+        <a href="/download.html" class="btn btn-md btn-outlined navbar__mobile-cta">
+          <span class="btn__label">Download Spixi</span>
+        </a>
+        <button class="navbar__toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu">
+          <img src="assets/icons/list.svg" alt="" class="navbar__toggle-icon navbar__toggle-icon--menu">
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="mobile-menu__header">
+      <a href="/" class="mobile-menu__logo">
+        <img src="assets/icons/spixi-logo.svg" alt="Spixi">
+      </a>
+      <button class="mobile-menu__close" id="navClose" aria-label="Close navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu__nav">
+      <a href="/index.html#features" class="mobile-menu__link">Features</a>
+      <a href="/help-center.html" class="mobile-menu__link">Help Center</a>
+      <a href="/mini-apps.html" class="mobile-menu__link">Mini Apps</a>
+    </nav>
+    <div class="mobile-menu__cta">
+      <a href="/download.html" class="btn btn-md btn-primary">
+        <span class="btn__label">Download Spixi</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Help Hero Section -->
+  <section class="help-hero">
+    <div class="help-hero__container">
+      <!-- Content -->
+      <div class="help-hero__content">
+        <div class="help-hero__text">
+          <p class="help-hero__subtitle">How it works and FAQ</p>
+          <h1 class="help-hero__title">Help Center</h1>
+          <p class="help-hero__description">Learn how Spixi works, how to keep your account safe, and how to get the most out of chat, wallet and Mini Apps.</p>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="help-hero__media">
+        <img src="assets/images/help-hero-img.png" alt="Spixi Help Center" class="help-hero__image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Help Topics FAQ Section -->
+  <section class="help-topics">
+    <div class="help-topics__container">
+      
+      <!-- Section Header -->
+      <div class="help-topics__header">
+        <div class="help-topics__overline">
+          <p class="help-topics__label">Browse by topic</p>
+        </div>
+        <h2 class="help-topics__title">All help topics</h2>
+      </div>
+
+      <!-- Main Content: Nav + FAQ -->
+      <div class="help-topics__content">
+        
+        <!-- Left: Category Navigation -->
+        <nav class="help-topics__nav" id="categoryNav">
+          <!-- Categories will be loaded from YAML -->
+        </nav>
+
+        <!-- Right: FAQ Items -->
+        <div class="help-topics__faq" id="faqContainer">
+          <!-- FAQ items will be loaded from YAML -->
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Band Section -->
+  <section class="cta-band">
+    <div class="cta-band__container">
+      
+      <!-- Content Area -->
+      <div class="cta-band__content">
+        <div class="cta-band__label-wrapper">
+          <span class="cta-band__label">Ready to try Spixi?</span>
+        </div>
+        <div class="cta-band__text">
+          <h2 class="cta-band__title">Download Spixi to start messaging privately.</h2>
+          <p class="cta-band__description">Get a private messenger with a built-in IXI wallet and mini apps, ready to use on desktop and mobile.</p>
+        </div>
+        <div class="cta-band__cta">
+          <a href="/download.html" class="btn btn-md btn-primary">
+            <span class="btn__icon btn__icon--leading">
+              <img src="assets/icons/DownloadSimple.svg" alt="" width="24" height="24">
+            </span>
+            <span class="btn__label">Download Spixi</span>
+          </a>
+          <p class="cta-band__note">* Available for Android, iOS, MacOS & Windows</p>
+        </div>
+      </div>
+
+      <!-- Image Area -->
+      <div class="cta-band__image">
+        <img src="assets/images/spixi-cta.png" alt="Spixi app interface" class="cta-band__img-desktop">
+      </div>
+      
+    </div>
+
+    <!-- Social Proof -->
+    <div class="cta-band__proof">
+      <span class="proof__label">Loved by early users</span>
+      <svg class="proof__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 14.25C8 14.25 2.75 10.75 2.75 6.75C2.75 4.25 4.5 3.25 6 3.25C7.25 3.25 8 4 8 4C8 4 8.75 3.25 10 3.25C11.5 3.25 13.25 4.25 13.25 6.75C13.25 10.75 8 14.25 8 14.25Z" fill="currentColor"/>
+      </svg>
+      <p class="proof__text">· 4.8 / 5 on Google Play (50+ reviews)</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      
+      <!-- Content Area -->
+      <div class="footer__content">
+        
+        <!-- Left Side: Brand + Socials -->
+        <div class="footer__left">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <img src="assets/icons/spixi-logo.svg" alt="" class="footer__logo-icon">
+              <span class="footer__logo-text">Spixi</span>
+            </div>
+            <p class="footer__tagline">Private messaging with IXI wallet and mini apps.</p>
+          </div>
+          <div class="footer__socials">
+            <a href="https://x.com/spixiim" class="footer__social-link" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+              <svg class="footer__social-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.9 14.3L26.6 5.5H24.9L18.1 13.1L12.7 5.5H6L14.1 17.3L6 26.5H7.7L14.9 18.4L20.6 26.5H27.3L18.9 14.3ZM15.9 17.3L15.1 16.2L8.3 6.8H11.8L17.2 14.3L18 15.4L24.9 25.2H21.4L15.9 17.3Z" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="https://github.com/ixian-platform/Spixi" class="footer__social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <svg class="footer__social-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 3C8.82 3 3 8.82 3 16C3 21.75 7.03 26.56 12.44 28.25C13.04 28.36 13.25 27.99 13.25 27.67C13.25 27.38 13.24 26.62 13.24 25.81C9.5 26.54 8.8 24.62 8.6 23.63C8.49 23.13 7.9 22.25 7.37 21.96C6.94 21.75 6.34 21.02 7.36 21.01C8.3 21 8.94 21.85 9.12 22.22C10.22 24.03 11.97 23.51 13.28 23.19C13.38 22.49 13.67 21.96 13.99 21.65C11.24 21.34 8.36 20.3 8.36 15.56C8.36 14.21 8.85 13.1 9.14 12.23C9.03 11.92 8.64 10.69 9.25 9.05C9.25 9.05 10.28 8.73 13.25 10.72C14.25 10.44 15.3 10.3 16.35 10.3C17.4 10.3 18.45 10.44 19.45 10.72C22.42 8.72 23.45 9.05 23.45 9.05C24.06 10.69 23.67 11.92 23.56 12.23C23.85 13.1 24.34 14.2 24.34 15.56C24.34 20.31 21.45 21.34 18.7 21.65C19.1 22 19.44 22.67 19.44 23.72C19.44 25.25 19.43 26.48 19.43 27.67C19.43 27.99 19.64 28.37 20.24 28.25C25.63 26.56 29.66 21.74 29.66 16C29.66 8.82 23.84 3 16.66 3H16Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Navigation -->
+        <div class="footer__nav">
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Product</h3>
+            <ul class="footer__nav-list">
+              <li><a href="/download.html" class="footer__nav-link">Download Spixi</a></li>
+              <li><a href="/mini-apps.html" class="footer__nav-link">Mini Apps</a></li>
+              <li><a href="/help-center.html" class="footer__nav-link">Help Center</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Links</h3>
+            <ul class="footer__nav-list">
+              <li><a href="https://www.ixian.io" class="footer__nav-link" target="_blank" rel="noopener noreferrer">Ixian Website</a></li>
+              <li><a href="https://www.ixilabs.com" class="footer__nav-link" target="_blank" rel="noopener noreferrer">IXI Labs Website</a></li>
+              <li><a href="https://apps.spixi.io" class="footer__nav-link" target="_blank" rel="noopener noreferrer">Spixi App Store</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Legal</h3>
+            <ul class="footer__nav-list">
+              <li><a href="/privacy-policy.html" class="footer__nav-link">Privacy Policy</a></li>
+              <li><a href="/terms-of-use.html" class="footer__nav-link">Terms of Use</a></li>
+              <li><a href="javascript:void(0)" class="footer__nav-link" onclick="CookieConsent.showSettings();">Cookies Settings</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <p class="footer__copyright">© 2026 IXI Labs. All rights reserved.</p>
+      
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__container">
+      <div class="cookie-banner__content">
+        <h3 class="cookie-banner__title">We use cookies</h3>
+        <p class="cookie-banner__text">We use cookies to improve your experience and analyze site usage. Read our <a href="/privacy-policy.html">Privacy Policy</a> for details.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button class="btn btn-sm btn-outlined" id="cookieSettingsBtn"><span class="btn__label">Settings</span></button>
+        <button class="btn btn-sm btn-outlined" id="cookieRejectAll"><span class="btn__label">Reject All</span></button>
+        <button class="btn btn-sm btn-primary" id="cookieAcceptAll"><span class="btn__label">Accept All</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Settings Modal -->
+  <div class="cookie-settings" id="cookieSettings" aria-hidden="true">
+    <div class="cookie-settings__dialog" role="dialog" aria-modal="true" aria-labelledby="cookieSettingsTitle">
+      <div class="cookie-settings__header">
+        <h2 class="cookie-settings__title" id="cookieSettingsTitle">Cookie Settings</h2>
+        <button class="cookie-settings__close" id="cookieSettingsClose" aria-label="Close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="cookie-settings__body">
+        <p class="cookie-settings__intro">Choose which cookies you want to allow. Your preferences will be saved for future visits.</p>
+        <div class="cookie-settings__group">
+          <div class="cookie-settings__option">
+            <div class="cookie-settings__option-info">
+              <h4 class="cookie-settings__option-title">Necessary Cookies</h4>
+              <p class="cookie-settings__option-desc">Required for the website to function properly. Cannot be disabled.</p>
+            </div>
+            <label class="cookie-toggle"><input type="checkbox" class="cookie-toggle__input" checked disabled><span class="cookie-toggle__slider"></span></label>
+          </div>
+        </div>
+        <div class="cookie-settings__group">
+          <div class="cookie-settings__option">
+            <div class="cookie-settings__option-info">
+              <h4 class="cookie-settings__option-title">Analytics Cookies</h4>
+              <p class="cookie-settings__option-desc">Help us understand how visitors interact with the website.</p>
+            </div>
+            <label class="cookie-toggle"><input type="checkbox" class="cookie-toggle__input" id="cookieAnalytics"><span class="cookie-toggle__slider"></span></label>
+          </div>
+        </div>
+        <div class="cookie-settings__group">
+          <div class="cookie-settings__option">
+            <div class="cookie-settings__option-info">
+              <h4 class="cookie-settings__option-title">Marketing Cookies</h4>
+              <p class="cookie-settings__option-desc">Used to deliver personalized content and measure campaigns.</p>
+            </div>
+            <label class="cookie-toggle"><input type="checkbox" class="cookie-toggle__input" id="cookieMarketing"><span class="cookie-toggle__slider"></span></label>
+          </div>
+        </div>
+      </div>
+      <div class="cookie-settings__footer">
+        <button class="btn btn-sm btn-outlined" id="cookieSavePrefs"><span class="btn__label">Save Preferences</span></button>
+        <button class="btn btn-sm btn-primary" id="cookieSettingsAcceptAll"><span class="btn__label">Accept All</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/help-center.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/cookies.js"></script>
+</body>
+</html>

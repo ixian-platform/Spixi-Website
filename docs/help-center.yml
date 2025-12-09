@@ -1,0 +1,254 @@
+title: Help Center
+description: Learn how Spixi works, how to keep your account safe, and how to get the most out of chat, wallet and Mini Apps.
+
+sections:
+  - id: getting-started
+    title: Getting started
+    items:
+      - id: create-or-restore-account
+        question: How do I create or restore my Spixi account
+        answer: |
+          Create a new account
+
+          1. Download and open Spixi.
+          2. Tap Create new account.
+          3. Choose a nickname and (optionally) a profile picture.
+          4. Set a strong password – this protects both your wallet and your messages.
+          5. Finish setup, then go to Settings → Backup and create a backup file so you can restore your account later.
+
+          Restore an existing account
+
+          1. Install and open Spixi on the new device.
+          2. Tap Restore account.
+          3. Select your backup file.
+          4. Enter the password you used when creating that backup.
+          5. After restore, your account and wallet will be available on this device.
+
+          If the backup file or password is wrong or lost, the account cannot be recovered.
+
+      - id: backup-account
+        question: How do I back up my Spixi account safely
+        answer: |
+          1. Open Settings → Backup in Spixi.
+          2. Tap Create backup and wait for the file to be generated.
+          3. Save the backup file in a safe place (for example encrypted storage or an external drive).
+          4. Store your password separately and securely – written down and kept offline is best.
+          5. Use this backup file + password to restore your account on a new device.
+
+          Anyone with both the backup file and password can access your account and IXI funds, so treat them like physical keys.
+
+      - id: understand-spixi-address
+        question: What is my Spixi address and when do I use it
+        answer: |
+          Your Spixi address is your core identifier in the Spixi  Ixian network.
+
+          You use it to
+          - Let others add you as a contact
+          - Receive IXI payments
+          - Link your identity to services that integrate with Spixi  Ixian
+
+          You can share it by copying the text address or showing your QR code.
+          You can change your nickname at any time, but your existing Spixi address for that account does not change.
+
+  - id: account-identity-security
+    title: Account, identity & security
+    items:
+      - id: address-vs-nickname-vs-ixi-name
+        question: What's the difference between my nickname, Spixi address and IXI Name
+        answer: |
+          - Nickname  
+            The name your contacts see in chats. Cosmetic only; you can change it anytime. Not used for payments or routing.
+
+          - Spixi address  
+            Your main cryptographic identifier. Used to add you as a contact and send IXI. Generated when you create your account.
+
+          - IXI Name (when available)  
+            A human-readable name that maps to your Spixi  IXI address, so others don't have to copy long strings.
+
+          Think of it like this nickname = display name, Spixi address = raw ID, IXI Name = nice alias on top of the raw ID.
+
+      - id: passwords-backups-recovery
+        question: What should I know about passwords, backups and recovery
+        answer: |
+          Spixi is self-custodial – there is no "forgot password" and no central admin who can reset your account.
+
+          To keep access to your account, you must have
+          - The backup file
+          - The correct password for that backup
+
+          Good practices
+          1. Use a unique, strong password that you don't reuse elsewhere.
+          2. Create backups regularly, especially after big changes.
+          3. Store both password and backup file in safe, separate, offline locations.
+
+          Lose either one and that account (and its funds) are gone. That's the trade-off for not trusting a central party with your keys.
+
+      - id: how-spixi-protects-data
+        question: How does Spixi protect my privacy and data
+        answer: |
+          - Spixi uses the Ixian decentralized network – there is no single central chat server storing all messages.
+          - Messages are stored locally on your device. If you delete the app or wipe the device, the history is gone unless you have your own backups.
+          - Communication between you and your contacts is protected using strong encryption.
+          - Payments are recorded on the Ixian blockchain; your wallet keys never leave your device.
+
+          If someone gets full access to your device, they can still read what's on it – including Spixi. Your device security matters just as much as Spixi's protocol.
+
+  - id: chats-contacts-communities
+    title: Chats, contacts & communities
+    items:
+      - id: add-manage-contacts
+        question: How do I add, remove or manage contacts in Spixi
+        answer: |
+          Add a contact
+
+          1. Tap New chat or Add contact.
+          2. Enter the person's Spixi address or IXI Name, or scan their QR code.
+          3. Confirm and start the chat.
+
+          Remove a contact
+
+          1. Open the chat with that person.
+          2. Tap their avatar or the chat info area.
+          3. Choose Remove contact.
+
+          Removing a contact cuts the secure session and stops new messages. You can always add them again later.
+
+      - id: start-secure-chats-calls
+        question: How do I start secure chats and calls in Spixi
+        answer: |
+          Start a chat
+
+          1. Add the person as a contact (or pick an existing contact).
+          2. Tap their name to open the chat.
+          3. Type and send messages – they go over an encrypted channel.
+
+          Start a voice call (if available in your build)
+
+          1. Open the chat with the contact.
+          2. Tap the call icon.
+          3. Wait for the other side to accept.
+
+          Calls and chats require both sides to have Spixi running and a working internet connection.
+
+      - id: servers-groups-community
+        question: Does Spixi support groups or community servers
+        answer: |
+          - Group chats may not be available in your current public version yet. They are planned as the protocol and app evolve.
+          - You can use the Spixi Community Bot and other integrations to create shared spaces where multiple users can join and interact.
+
+          Check the official Ixian  Spixi community channels for the latest information and public test servers.
+
+  - id: wallet-ixi-payments
+    title: Wallet & IXI payments
+    items:
+      - id: send-ixi
+        question: How do I send IXI from my Spixi wallet
+        answer: |
+          1. Open the Wallet tab in Spixi.
+          2. Tap Send.
+          3. Paste the recipient's IXI  Spixi address or scan their QR code.
+          4. Enter the amount of IXI you want to send.
+          5. Review the details, including the network fee.
+          6. Confirm the transaction.
+
+          Once broadcast, the transaction is recorded on the Ixian blockchain and cannot be reversed.
+
+      - id: receive-ixi
+        question: How do I receive IXI in Spixi
+        answer: |
+          1. Open the Wallet tab in Spixi.
+          2. Tap Receive.
+          3. Show your QR code or copy your IXI  Spixi address.
+          4. Share it with the sender.
+
+          When the transaction is confirmed on-chain, your balance will update. Confirmation time depends on network conditions and the sender's fee.
+
+      - id: fees-and-costs
+        question: Are there any fees when using Spixi and IXI
+        answer: |
+          - Chat messages and files – Sending messages in Spixi is free within protocol limits.
+          - IXI payments – Each transaction includes a small network fee paid in IXI to have it processed and recorded on the blockchain.
+          - The app itself – Spixi is free to download and use. There are no subscriptions or in-app "unlock basic features" fees.
+
+          You only pay network fees when you actually send IXI.
+
+  - id: mini-apps
+    title: Mini Apps
+    items:
+      - id: what-are-mini-apps
+        question: What are Mini Apps in Spixi
+        answer: |
+          Mini Apps are lightweight applications that run inside Spixi.
+
+          They can be
+          - Games (e.g. Tic-Tac-Toe, Pong)
+          - Tools (whiteboard, calculators, utilities)
+          - Service integrations that use Spixi's secure communication channel
+
+          You open them from the Mini Apps section or from links shared in chats.
+
+      - id: install-use-mini-apps
+        question: How do I find, install and use Mini Apps
+        answer: |
+          1. Open the Mini Apps section in Spixi.
+          2. Browse the list or use search to find an app.
+          3. Tap a Mini App to view details.
+          4. Tap Open (or Install, depending on UI) to start using it.
+          5. Follow any on-screen instructions – some apps work in a chat context, others run as standalone tools.
+
+          You can launch Mini Apps again later from the same section or from recent items, depending on your Spixi version.
+
+      - id: mini-apps-permissions-safety
+        question: Are Mini Apps safe and what permissions do they have
+        answer: |
+          - Mini Apps run on top of the Spixi  Ixian stack and share its encrypted transport.
+          - Some Mini Apps may request access to
+            - Read certain messages in a chat
+            - Send messages on your behalf in that chat
+            - Interact with your IXI wallet (for example, to generate payment requests)
+
+          Only use Mini Apps from sources you trust, read permission prompts carefully, and remove any app you're not comfortable with.
+
+  - id: troubleshooting-support
+    title: Troubleshooting & support
+    items:
+      - id: messages-not-sending
+        question: What can I do if my messages are not sending or delivering
+        answer: |
+          1. Check your internet connection (Wi-Fi or mobile data) on both sides.
+          2. Make sure you can load a website or another app.
+          3. Ask your contact if Spixi is running on their device.
+          4. Close and reopen Spixi; if needed, restart your device.
+          5. If you recently removed and re-added the contact, wait a bit for the new secure session to establish.
+
+          If nothing helps, collect logs (if available) and contact support with details (device, OS, what you tried).
+
+      - id: backup-restore-issues
+        question: Why can't I restore my backup or open my account
+        answer: |
+          Common reasons
+          - The backup file doesn't match the account you're trying to restore.
+          - The password is incorrect (wrong case, typo, or old password).
+          - The backup file is corrupted or incomplete.
+
+          What you can try
+          1. Double-check that you're using the correct file.
+          2. Enter the password slowly and carefully.
+          3. If you have multiple backups, try an older one.
+
+          If none of them work, there is no way to bypass the encryption. That account cannot be recovered.
+
+      - id: contact-support-community
+        question: How can I get more help with Spixi
+        answer: |
+          If you're stuck or something doesn't behave as expected
+
+          - Use the support contact provided in the app or on the Spixi website.
+          - Join the official Ixian  Spixi community channels (Telegram, X, etc.) to get help from other users and the team.
+          - For technical users, you can report bugs or issues on the relevant Ixian  Spixi repositories with logs and details.
+
+          When you contact support, include
+          - Your device and OS version
+          - Spixi app version
+          - What you were trying to do
+          - Any error messages or screenshots
