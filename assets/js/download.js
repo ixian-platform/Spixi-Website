@@ -146,7 +146,7 @@ class DownloadPage {
         hideVersion: true,
         isStoreLink: true,
         isStoreBadge: true,
-        badgeImage: 'assets/images/google-play-badge.png'
+        badgeImage: 'assets/images/google-play.png'
       }
     };
 
