@@ -1456,6 +1456,7 @@ input, textarea, select {
   line-height: var(--body-sm-line-height, 20px);
   color: var(--color-text-01, #f9fafb);
   white-space: pre-wrap;
+  word-break: break-all;
 }
 
 .modal__copy-btn {
@@ -1494,13 +1495,14 @@ input, textarea, select {
 }
 
 .modal__qr-code {
-  width: 166px;
-  height: 164px;
+  width: 184px;
+  height: 184px;
+  padding: 12px;
 }
 
 .modal__qr-code img {
-  width: 100%;
-  height: 100%;
+  width: 160px;
+  height: 160px;
   display: block;
 }
 
@@ -1637,6 +1639,8 @@ input, textarea, select {
   .modal--desktop {
     width: 100%;
     max-width: 480px;
+    max-height: 100%;
+    overflow: auto;
   }
 
   .modal__header {
@@ -1926,7 +1930,6 @@ input, textarea, select {
 
 .modal__qr-code {
   background-color: #ffffff;
-  padding: 12px;
   border-radius: 8px;
   display: inline-block;
   /* Ensure it wraps the content */

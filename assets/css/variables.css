@@ -346,10 +346,10 @@
   --z-index-dropdown: 100;
   --z-index-sticky: 200;
   --z-index-fixed: 300;
-  --z-index-modal: 500;
-  --z-index-tooltip: 700;
   --z-index-nav: 1000;
   --z-index-mobile-menu: 2000;
+  --z-index-modal: 3000;
+  --z-index-tooltip: 3200;
   
   /* Opacity */
   --opacity-disabled: 0.4;
