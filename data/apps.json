@@ -1,48 +1,6 @@
 {
   "apps": [
     {
-      "id": "com.ixilabs.spixi.auth",
-      "name": "Spixi Authenticator",
-      "publisher": "IXI Labs",
-      "description": "QR code authentication utility for secure Spixi identity verification.",
-      "category": "Tools",
-      "featured": false,
-      "version": "1.0.0",
-      "icon": "https://apps.spixi.io/apps/com.ixilabs.spixi.auth.png",
-      "spixiUrl": "https://apps.spixi.io/apps/com.ixilabs.spixi.auth.spixi",
-      "github": "https://github.com/ixian-platform/Spixi-Mini-Apps/tree/master/apps/com.ixilabs.spixi.auth",
-      "singleUser": true,
-      "multiUser": false
-    },
-    {
-      "id": "com.ixilabs.spixi.gate-control",
-      "name": "Gate Control",
-      "publisher": "IXI Labs",
-      "description": "QuIXI Gate Control example app for IoT device management.",
-      "category": "IoT",
-      "featured": true,
-      "version": "1.0.2",
-      "icon": "https://apps.spixi.io/apps/com.ixilabs.spixi.gate-control.png",
-      "spixiUrl": "https://apps.spixi.io/apps/com.ixilabs.spixi.gate-control.spixi",
-      "github": "https://github.com/ixian-platform/Spixi-Mini-Apps/tree/master/apps/com.ixilabs.spixi.gate-control",
-      "singleUser": true,
-      "multiUser": false
-    },
-    {
-      "id": "com.ixilabs.spixi.mini-apps-test",
-      "name": "Mini Apps Test",
-      "publisher": "IXI Labs",
-      "description": "SDK testing and demo playground for developers building Spixi Mini Apps. Test storage, networking, and callbacks.",
-      "category": "Dev Tools",
-      "featured": true,
-      "version": "1.2.0",
-      "icon": "https://apps.spixi.io/apps/com.ixilabs.spixi.mini-apps-test.png",
-      "spixiUrl": "https://apps.spixi.io/apps/com.ixilabs.spixi.mini-apps-test.spixi",
-      "github": "https://github.com/ixian-platform/Spixi-Mini-Apps/tree/master/apps/com.ixilabs.spixi.mini-apps-test",
-      "singleUser": true,
-      "multiUser": true
-    },
-    {
       "id": "com.ixilabs.spixi.tictactoe",
       "name": "Tic-Tac-Toe",
       "publisher": "IXI Labs",
@@ -68,7 +26,7 @@
       "spixiUrl": "https://apps.spixi.io/apps/com.ixilabs.spixi.video-test.spixi",
       "github": "https://github.com/ixian-platform/Spixi-Mini-Apps/tree/master/apps/com.ixilabs.spixi.video-test",
       "singleUser": true,
-      "multiUser": true
+      "multiUser": false
     },
     {
       "id": "com.ixilabs.spixi.whiteboard",
@@ -81,7 +39,7 @@
       "icon": "https://apps.spixi.io/apps/com.ixilabs.spixi.whiteboard.png",
       "spixiUrl": "https://apps.spixi.io/apps/com.ixilabs.spixi.whiteboard.spixi",
       "github": "https://github.com/ixian-platform/Spixi-Mini-Apps/tree/master/apps/com.ixilabs.spixi.whiteboard",
-      "singleUser": true,
+      "singleUser": false,
       "multiUser": true
     }
   ],

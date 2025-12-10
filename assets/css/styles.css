@@ -1772,6 +1772,39 @@ input, textarea, select {
   flex-shrink: 0;
 }
 
+/* App Card Header Right - User Capability Icons and Badge */
+.app-card__header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs, 8px);
+}
+
+.app-card__user-capabilities {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs, 8px);
+}
+
+.app-card__user-icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding: var(--spacing-3xs, 2px);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  border-radius: var(--corner-radius-md, 12px);
+  background: var(--colors-surface-04, #172330);
+}
+
+.app-card__user-icon svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent-01, #6366f1);
+}
+
 /* App Card Content */
 .app-card__content {
   display: flex;
@@ -1838,10 +1871,10 @@ input, textarea, select {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--icon-size-lg, 32px);
-  height: var(--icon-size-lg, 32px);
+  width: 32px;
+  height: 32px;
   color: var(--color-icon-02, #d4d4d8);
-  transition: color var(--transition-base, 200ms ease);
+  transition: color 0.2s ease;
 }
 
 .app-card__github:hover {
@@ -1861,6 +1894,50 @@ input, textarea, select {
   }
 }
 
+/* ========================================
+   APP CARD UPDATES
+   ======================================== */
+
+.app-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: var(--spacing-md, 16px);
+  /* border-top: 1px solid var(--color-outline-02, #172330);  Optional separator better without if cards are framed */
+}
+
+.app-card__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm, 12px);
+}
+
+.app-card__version {
+  font-family: var(--label-xs-font-family, 'Inter', sans-serif);
+  font-size: var(--label-xs-font-size, 12px);
+  color: var(--color-text-02, #d4d4d8);
+  font-weight: 500;
+}
+
+/* ========================================
+   QR CODE UPDATES
+   ======================================== */
+
+.modal__qr-code {
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  display: inline-block;
+  /* Ensure it wraps the content */
+}
+
+/* Adjusted Version spacing */
+.app-card__version {
+  margin-top: -4px;
+  /* Pull it up slightly closer to description if needed, or just let gap handle it */
+  display: inline-block;
+}
 
 /* ========================================
    3. SECTIONS - FEATURES
