@@ -112,7 +112,7 @@ class DownloadPage {
     const configs = {
       windows: {
         text: 'Download for Windows',
-        url: 'https://github.com/ixian-platform/Spixi/releases/download/v0.9.20/Spixi-v0.9.20-Win.zip',
+        url: 'https://github.com/ixian-platform/Spixi/releases/download/v0.9.22/Spixi-v0.9.22-Win.zip',
         icon: this.getDownloadIcon(),
         hideVersion: false,
         isStoreLink: false,
